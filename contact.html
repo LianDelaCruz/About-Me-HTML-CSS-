@@ -4,27 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Contact Lian</title>
-    <style>
-        .box{
-            margin: 10%
-        }
-    </style>
+    
 </head>
-<body class="box">
-    <h2 style="border:2px solid rgb(62, 174, 202);">Contact Lian now.</h2>
-
-    <img src="img/contact_us.jpg" alt="contactpic" width="400"; height="200">
+    
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./inspiration.html">Inspiration</a>
+        <a href="./cake.html">MyCakes</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    <h2 class="wow">Contact Lian now.</h2>
+   
     <br>
 
-    <article>
+    <article class="container">
 
         <form>
-            <label for="name">Name:</label>
-            <input id="name" type="text" placeholder="Write your name here">
-            <label for="message">message:</label>
-            <textarea id="message" placeholder="Write your message here"></textarea>
-            <input type="submit">
+             <label for="fname">First Name</label>
+            <input id="fname" type="text" name="firstname" placeholder="Your name here..">
+
+            <label for="lname">Last Name</label>
+            <input id="lname" type="text" name="lastname" placeholder="Your last name here..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="sweden">Sweden</option>
+                <option value="philippines">Philippines</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here"
+            style="height: 200px"></textarea>
+            <input type="submit" value="submit">
 
         </form> <br>
 
@@ -37,14 +52,15 @@
 
     </article>
       
-    <footer>
+    <footer class="bottom">
     
-        <strong>Wanna go back to my profile?</strong>
-            <a href="index.html">Click here</a> <br> <br>
+        <p>Wanna go back to my profile?</p>
+            <a href="index.html">Click here</a>
 
-        <strong>What inspires me?</strong>
+        <p>What inspires me?</p>
         <a href="inspiration.html">Click here</a>
-
+        <p>Here is the <a href="cake.html">link</a> to my cake collection.</p>
+        <img src="https://media.giphy.com/media/l4pTfx2qLszoacZRS/giphy.gif?cid=790b761159a9c47db13dfffcb8da26b15a1fedae91cc9b0e&rid=giphy.gif&ct=g" />
     </footer>
    
     
